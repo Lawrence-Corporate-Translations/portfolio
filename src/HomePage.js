@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen flex flex-col" style={{backgroundImage: `url"background2.jpg"`}}>
+    <main className="min-h-screen flex flex-col" style={{backgroundImage: `url("/background2.jpg")`, backgroundSize: '100%'}}>
       {/* Top Navigation */}
       <header className="flex items-center justify-between px-8 py-4 bg-white shadow-md">
 
