@@ -1,52 +1,48 @@
 import React from "react";
-import { Card, CardContent } from "../components/card";
 import { Button } from "../components/button";
 import { Link } from "react-router-dom";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-white to-gray-100 text-gray-900 px-6 py-12 space-y-16">
+    <main className="min-h-screen flex flex-col" style={{backgroundImage: `url("/background2.jpg")`, backgroundSize: '100%'}}>
+      {/* Top Navigation */}
+      <header className="flex items-center justify-between px-8 py-4 bg-white shadow-md">
 
-      {/* Header */}
-      <header className="flex flex-col items-center text-center space-y-6">
-        <h1 className="text-5xl font-extrabold text-gray-900 drop-shadow-sm">
-          Lawrence Corporate Translations
-        </h1>
-        <p className="text-lg md:text-xl max-w-2xl text-gray-700">
-          Professional translation services for businesses across sectors, delivering clarity and accuracy in every language.
-        </p>
-        <Link to="/contact">
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md transition-all">
-            Contact Us!
-          </Button>
-        </Link>
+        <nav className="hidden md:flex space-x-6 uppercase text-sm tracking-wide text-gray-700">
+        <Link to="/" className="hover:bg-gray-700 p-2 rounded text-sm">Home</Link>
+        <Link to="/contact" className="hover:bg-gray-700 p-2 rounded text-sm">Contact Us</Link>
+        <Link to="/services" className="hover:bg-gray-700 p-2 rounded text-sm">Our Services</Link>
+        <Link to="/about" className="hover:bg-gray-700 p-2 rounded text-sm">About Us</Link>
+        </nav>
+        <Button className="bg-red-600 text-white hover:bg-red-700 px-4 py-2">
+          Request a Quote
+        </Button>
       </header>
 
-      {/* Services Section */}
-      <section className="grid md:grid-cols-2 gap-10 px-2 md:px-8">
-        <Card className="bg-white shadow-lg rounded-2xl hover:shadow-xl transition-shadow">
-          <CardContent className="p-8 space-y-4">
-            <h2 className="text-2xl font-semibold text-blue-700">Our Services</h2>
-            <p className="text-gray-700 leading-relaxed">
-              We provide certified document translation, website localization, legal and technical translation, and more.
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card className="bg-white shadow-lg rounded-2xl hover:shadow-xl transition-shadow">
-          <CardContent className="p-8 space-y-4">
-            <h2 className="text-2xl font-semibold text-blue-700">Why Choose Us</h2>
-            <p className="text-gray-700 leading-relaxed">
-              Native speakers, industry expertise, fast turnaround times, and a commitment to excellence.
-            </p>
-          </CardContent>
-        </Card>
+      {/* Hero Section */}
+      <section
+        className="relative h-[500px] flex items-center justify-center text-center bg-cover bg-center"
+        style={{ backgroundImage: `url('/background.jpg')` }} // Replace with actual image path
+      >
+        <div className="bg-black bg-opacity-40 w-full h-full absolute top-0 left-0" />
+        <h1 className="relative z-10 text-white text-4xl md:text-5xl font-serif italic px-4">
+          Understanding Corporate Translation
+          <br />
+          Services for Businesses
+        </h1>
       </section>
 
-      {/* Footer */}
-      <footer className="text-center text-sm text-gray-600 border-t pt-6">
-        &copy; {new Date().getFullYear()} Lawrence Corporate Translations Ltd. All rights reserved.
-      </footer>
+      {/* Slider navigation */}
+      <div className="flex justify-center items-center py-4 space-x-6 text-red-600 text-lg font-medium">
+        <button className="flex items-center space-x-1">
+          <span>&lt;</span>
+          <span>Previous</span>
+        </button>
+        <button className="flex items-center space-x-1">
+          <span>Next</span>
+          <span>&gt;</span>
+        </button>
+      </div>
     </main>
   );
 }
