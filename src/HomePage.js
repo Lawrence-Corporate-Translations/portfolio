@@ -1,41 +1,48 @@
 import React from "react";
-import { Card, CardContent } from "./components/card";
 import { Button } from "./components/button";
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-white text-gray-900 p-8 space-y-12">
-      <header className="flex flex-col items-center text-center space-y-4">
-        <h1 className="text-4xl font-bold">Lawrence Corporate Translations</h1>
-        <p className="text-lg max-w-xl">
-          Professional translation services for businesses across sectors, delivering clarity and accuracy in every language.
-        </p>
-        <Button>Contact Us</Button>
+    <main className="min-h-screen flex flex-col" style={{backgroundImage: `url"background2.jpg"`}}>
+      {/* Top Navigation */}
+      <header className="flex items-center justify-between px-8 py-4 bg-white shadow-md">
+
+        <nav className="hidden md:flex space-x-6 uppercase text-sm tracking-wide text-gray-700">
+        <Link to="/" className="hover:bg-gray-700 p-2 rounded text-sm">Home</Link>
+        <Link to="/contact" className="hover:bg-gray-700 p-2 rounded text-sm">Contact Us</Link>
+        <Link to="/services" className="hover:bg-gray-700 p-2 rounded text-sm">Our Services</Link>
+        <Link to="/about" className="hover:bg-gray-700 p-2 rounded text-sm">About Us</Link>
+        </nav>
+        <Button className="bg-red-600 text-white hover:bg-red-700 px-4 py-2">
+          Request a Quote
+        </Button>
       </header>
 
-      <section className="grid md:grid-cols-2 gap-8">
-        <Card>
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-semibold mb-2">Our Services</h2>
-            <p>
-              We provide certified document translation, website localization, legal and technical translation, and more.
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-semibold mb-2">Why Choose Us</h2>
-            <p>
-              Native speakers, industry expertise, fast turnaround times, and a commitment to excellence.
-            </p>
-          </CardContent>
-        </Card>
+      {/* Hero Section */}
+      <section
+        className="relative h-[500px] flex items-center justify-center text-center bg-cover bg-center"
+        style={{ backgroundImage: `url('/background.jpg')` }} // Replace with actual image path
+      >
+        <div className="bg-black bg-opacity-40 w-full h-full absolute top-0 left-0" />
+        <h1 className="relative z-10 text-white text-4xl md:text-5xl font-serif italic px-4">
+          Understanding Corporate Translation
+          <br />
+          Services for Businesses
+        </h1>
       </section>
 
-      <footer className="text-center text-sm text-gray-600 border-t pt-4">
-        &copy; {new Date().getFullYear()} Lawrence Corporate Translations Ltd. All rights reserved.
-      </footer>
+      {/* Slider navigation */}
+      <div className="flex justify-center items-center py-4 space-x-6 text-red-600 text-lg font-medium">
+        <button className="flex items-center space-x-1">
+          <span>&lt;</span>
+          <span>Previous</span>
+        </button>
+        <button className="flex items-center space-x-1">
+          <span>Next</span>
+          <span>&gt;</span>
+        </button>
+      </div>
     </main>
   );
 }

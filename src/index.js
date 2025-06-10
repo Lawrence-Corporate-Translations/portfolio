@@ -1,13 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+import HomePage from "./HomePage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter> {/* ✅ FIX: This wraps the app in a router context */}
-      <App />
+    <BrowserRouter> 
+      <HomePage />
     </BrowserRouter>
-  </React.StrictMode>
 );
