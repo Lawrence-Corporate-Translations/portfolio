@@ -1,0 +1,75 @@
+/* AboutPage.css */
+
+.about-page-container {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.about-main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.about-hero {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 24px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=2850&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 1000px;
+  z-index: 1;
+}
+
+.about-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-family: serif;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.about-subtitle {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 300;
+  margin-bottom: 48px;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.about-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #1f2937;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+}
+
+.about-card h2 {
+  color: #dc2626;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
