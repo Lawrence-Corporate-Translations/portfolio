@@ -160,10 +160,4 @@ header {
   .menu-button {
     display: none;
   }
-
-  .request-quote-btn {
-  padding: 5px;
-  border-radius: 8px;
-  font-size: 8px;
-}
 }
