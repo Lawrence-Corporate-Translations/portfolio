@@ -1,100 +1,81 @@
-
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "./button";
 import logo from "../assets/images/logo.png";
+import '../styles/header.css';
 
-export default function Header(){
-    return(
-        <header style={{
-          height: '80px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          padding: '0 48px',
-          backgroundColor: 'rgba(255, 255, 255, 0.95)',
-          boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
-          zIndex: 50,
-          flexShrink: 0
-        }}>
-          <div style={{ 
-            display: 'flex',
-            alignItems: 'center',
-            gap: '12px'
-          }}>
-            <img 
-              src={logo} 
-              alt="LangBridge Logo" 
-              style={{
-                height: '40px',
-                width: 'auto'
-              }}
-            />
-            <span style={{ 
-              fontSize: '24px', 
-              fontWeight: 'bold', 
-              color: '#dc2626' 
-            }}>
-              Lawrence Corporate Translations
-            </span>
-          </div>
+export default function Header() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
-          <nav style={{ 
-            display: 'flex', 
-            gap: '24px',
-            '@media (max-width: 768px)': { display: 'none' }
-          }}>
-            {[
-              { label: "Home", path: "/" },
-              { label: "Contact Us", path: "/contact" },
-              { label: "Our Services", path: "/services" },
-              { label: "About Us", path: "/about" }
-            ].map((item, idx) => (
-              <Link
-                key={idx}
-                to={item.path}
-                style={{
-                  textTransform: 'uppercase',
-                  fontSize: '14px',
-                  letterSpacing: '0.05em',
-                  color: '#374151',
-                  textDecoration: 'none',
-                  padding: '8px 12px',
-                  borderRadius: '4px',
-                  transition: 'all 0.2s'
-                }}
-                onMouseEnter={(e) => {
-                  e.target.style.backgroundColor = '#374151';
-                  e.target.style.color = 'white';
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.backgroundColor = 'transparent';
-                  e.target.style.color = '#374151';
-                }}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
+  return (
+    <>
+      <header>
+        <div className="logo-container">
+          <img src={logo} alt="LangBridge Logo" />
+          <span className="logo-text">Lawrence Corporate Translations</span>
+        </div>
 
-          <div style={{ display: 'block' }}>
-            <Menu style={{ width: '24px', height: '24px', color: '#374151' }} />
-          </div>
+        <nav className="nav-desktop">
+          {[
+            { label: "Home", path: "/" },
+            { label: "Contact Us", path: "/contact" },
+            { label: "Our Services", path: "/services" },
+            { label: "About Us", path: "/about" },
+          ].map((item, idx) => (
+            <Link key={idx} to={item.path}>
+              {item.label}
+            </Link>
+          ))}
+        </nav>
 
-          <Button style={{
-            backgroundColor: '#dc2626',
-            color: 'white',
-            border: 'none',
-            padding: '10px 20px',
-            borderRadius: '12px',
-            fontSize: '14px',
-            cursor: 'pointer',
-            transition: 'background-color 0.2s'
-          }}
-          onMouseEnter={(e) => e.target.style.backgroundColor = '#b91c1c'}
-          onMouseLeave={(e) => e.target.style.backgroundColor = '#dc2626'}>
-            Request a Quote
-          </Button>
-        </header>
-    )
+
+        <Button
+          className="request-quote-btn"
+          onClick={() => alert("Request a quote clicked")}
+        >
+          Request a Quote
+        </Button>
+
+        
+        <div
+          className="menu-button"
+          onClick={() => setSidebarOpen(true)}
+          aria-label="Open menu"
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => e.key === "Enter" && setSidebarOpen(true)}
+        >
+          <Menu size={24} color="#374151" />
+        </div>
+      </header>
+
+      <aside
+        className={`sidebar ${sidebarOpen ? "open" : ""}`}
+        aria-hidden={!sidebarOpen}
+      >
+        <div
+          className="close-btn"
+          onClick={() => setSidebarOpen(false)}
+          role="button"
+          tabIndex={0}
+          aria-label="Close menu"
+          onKeyDown={(e) => e.key === "Enter" && setSidebarOpen(false)}
+        >
+          <X size={24} />
+        </div>
+
+        {[
+          { label: "Home", path: "/" },
+          { label: "Contact Us", path: "/contact" },
+          { label: "Our Services", path: "/services" },
+          { label: "About Us", path: "/about" },
+        ].map((item, idx) => (
+          <Link key={idx} to={item.path} onClick={() => setSidebarOpen(false)}>
+            {item.label}
+          </Link>
+        ))}
+      </aside>
+    </>
+  );
 }
