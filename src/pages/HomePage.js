@@ -1,8 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Header from "../components/header";
 import '../styles/HomePage.css';
 
 export default function HomePage() {
+  const { t } = useTranslation();
+
   return (
     <div className="homepage-container">
       <main className="homepage-main">
@@ -11,12 +14,11 @@ export default function HomePage() {
         <section className="hero-section">
           <div className="hero-content">
             <h1 className="hero-title">
-              Understanding Corporate Translation
-              <br />
-              Services for Businesses
+              {t("home.heroTitleLine1")} <br />
+              {t("home.heroTitleLine2")}
             </h1>
             <p className="hero-subtitle">
-              Empower your global reach with our expert translation solutions tailored for enterprises.
+              {t("home.heroSubtitle")}
             </p>
           </div>
         </section>
@@ -25,7 +27,7 @@ export default function HomePage() {
           <div className="slider-buttons">
             <button className="slider-button">
               <span style={{ fontSize: '24px' }}>&lt;</span>
-              <span>Previous</span>
+              <span>{t("home.previous")}</span>
             </button>
 
             <div className="slider-dots">
@@ -35,7 +37,7 @@ export default function HomePage() {
             </div>
 
             <button className="slider-button">
-              <span>Next</span>
+              <span>{t("home.next")}</span>
               <span style={{ fontSize: '24px' }}>&gt;</span>
             </button>
           </div>
