@@ -1,8 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Header from "../components/header";
 import "../styles/AboutPage.css";
 
 export default function AboutPage() {
+  const { t } = useTranslation();
   return (
     <div className="about-page-container">
       <main className="about-main">
@@ -10,37 +12,37 @@ export default function AboutPage() {
 
         <section className="about-hero">
           <div className="about-content">
-            <h1 className="about-title">About Our Company</h1>
+            <h1 className="about-title">{t("about.heroTitleLine1")}</h1>
             <p className="about-subtitle">
-              We help global businesses thrive through expert communication and cultural fluency.
+              {t("about.heroSubtitle")}
             </p>
 
             <div className="about-cards">
               <div className="about-card">
-                <h2>Our Mission</h2>
+                <h2>{t("about.cardTitle1")}</h2>
                 <p>
-                  To empower organizations worldwide with top-tier language and localization services that foster growth and connection.
+                  {t("about.cardContent1")}
                 </p>
               </div>
 
               <div className="about-card">
-                <h2>Our Values</h2>
+                <h2>{t("about.cardTitle2")}</h2>
                 <p>
-                  Integrity, cultural sensitivity, and precision guide everything we do to ensure your message resonates globally.
+                  {t("about.cardContent2")}
                 </p>
               </div>
 
               <div className="about-card">
-                <h2>Our Team</h2>
+                <h2>{t("about.cardTitle3")}</h2>
                 <p>
-                  A diverse group of linguists, strategists, and technologists dedicated to delivering excellence in every translation.
+                  {t("about.cardContent3")}
                 </p>
               </div>
 
               <div className="about-card">
-                <h2>Our Journey</h2>
+                <h2>{t("about.cardTitle4")}</h2>
                 <p>
-                  Founded in 2010, we've grown into a trusted partner for Fortune 500 companies across five continents.
+                  {t("about.cardContent4")}
                 </p>
               </div>
             </div>

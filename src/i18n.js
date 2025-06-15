@@ -3,8 +3,8 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-import en from './assets/langs/en.json';
-import he from './assets/langs/he.json';
+import en from './assets/i18n/en.json';
+import he from './assets/i18n/he.json';
 
 const initI18n = async () => {
   await i18n
@@ -15,7 +15,7 @@ const initI18n = async () => {
         en: { translation: en },
         he: { translation: he },
       },
-      fallbackLng: 'he',
+      fallbackLng: 'en',
       debug: process.env.NODE_ENV === 'development',
       
       detection: {
