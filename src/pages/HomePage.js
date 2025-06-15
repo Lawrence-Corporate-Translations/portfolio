@@ -8,7 +8,7 @@ export default function HomePage() {
 
   return (
     <div className="homepage-container">
-      <main className="homepage-main">
+      <main className="homepage-main" id="main">
         <Header />
 
         <section className="hero-section">
