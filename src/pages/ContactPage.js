@@ -5,39 +5,51 @@ import "../styles/ContactPage.css";
 
 export default function ContactPage() {
   const { t } = useTranslation();
+
   return (
     <div className="contact-page-container">
-      <main className="contact-main">
+      {/* Add role="main" and aria-label for screen readers */}
+      <main className="contact-main" role="main" aria-labelledby="contact-hero-heading">
         <Header />
 
+        {/* Hero section with heading association */}
         <section className="contact-hero">
           <div className="contact-content">
-            <h1 className="contact-title">{t("contact.heroTitleLine1")}</h1>
+            {/* id used for aria-labelledby */}
+            <h1 id="contact-hero-heading" className="contact-title">
+              {t("contact.heroTitleLine1")}
+            </h1>
+
             <p className="contact-subtitle">
               {t("contact.heroSubtitle")}
             </p>
 
-            <div className="contact-options">
-              <div className="contact-card">
+            {/* Options section with landmark role and aria-label */}
+            <section
+              className="contact-options"
+              aria-label={t("contact.contactMethodsSectionLabel") || "Contact Methods"}
+            >
+              {/* Use article or section to improve semantics */}
+              <article className="contact-card">
                 <h2>{t("contact.cardTitle1")}</h2>
                 <p>{t("contact.cardContent1")}</p>
-              </div>
+              </article>
 
-              <div className="contact-card">
+              <article className="contact-card">
                 <h2>{t("contact.cardTitle2")}</h2>
                 <p>{t("contact.cardContent2")}</p>
-              </div>
+              </article>
 
-              <div className="contact-card">
+              <article className="contact-card">
                 <h2>{t("contact.cardTitle3")}</h2>
                 <p>{t("contact.cardContent3")}</p>
-              </div>
+              </article>
 
-              <div className="contact-card">
+              <article className="contact-card">
                 <h2>{t("contact.cardTitle4")}</h2>
                 <p>{t("contact.cardContent4")}</p>
-              </div>
-            </div>
+              </article>
+            </section>
           </div>
         </section>
       </main>
