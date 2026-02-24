@@ -1,58 +1,29 @@
 {
-  "companyName": "Lawrence Corporate Translations",
-  "requestQuote": "Request a Quote",
+  "companyName": "Lawrence Corporate Translations Ltd",
+  "requestQuote": "Get a Quote",
   "nav": {
     "home": "Home",
-    "contact": "Contact Us",
-    "services": "Our Services",
+    "contact": "Contact",
+    "services": "Services",
     "about": "About Us"
   },
   "home": {
-    "heroTitleLine1": "Understanding Corporate Translation",
-    "heroTitleLine2": "Services for Businesses",
-    "heroSubtitle": "Empower your global reach with our expert translation solutions tailored for enterprises.",
+    "heroTitleLine1": "Legal & Financial Precision",
+    "heroTitleLine2": "Without Compromise",
+    "heroSubtitle": "Expert Hebrew-English translation of income documentation, medical records, and legal contracts. Serving investors and relocation firms globally.",
     "previous": "Previous",
     "next": "Next"
   },
-  "contact":{
-    "heroTitleLine1": "We're Here to Help",
-    "heroSubtitle": "Reach out to our team through any of the following options. We look forward to connecting with you.",
-    "cardTitle1": "Email",
-    "cardContent1": "Sales@lctltd.com",
-    "cardTitle2": "Phone",
-    "cardContent2": "+972 (54) 596-8308",
-    "cardTitle3": "Live Chat",
-    "cardContent3": "Chat with our support team 24/7",
-    "cardTitle4": "Visit Us",
-    "cardContent4": "123 Business St, Suite 100<br/>Jerusalem, 10001"
-  },
-  "services":{
-    "heroTitleLine1": "Our Services",
-    "heroSubtitle": " Comprehensive language solutions tailored for modern enterprises.",
-    "cardTitle1": "Document Translation",
-    "cardContent1": "Accurate and culturally sensitive translation for legal, medical, and technical documents.",
-    "cardTitle2": "Localization",
-    "cardContent2": "Adapt your software, apps, and websites to new markets with native fluency and UX precision.",
-    "cardTitle3": "Interpretation",
-    "cardContent3": "Real-time multilingual support for conferences, business meetings, and global events.",
-    "cardTitle4": "Transcription",
-    "cardContent4": "Creative rewriting that maintains your message and impact across cultures.",
-    "cardTitle5": "Multilingual SEO",
-    "cardContent5": "Boost your visibility with keyword research and content optimization in multiple languages.",
-    "cardTitle6": "Voiceover & Subtitling",
-    "cardContent6": "Bring your media to life with native voice talent and accurate subtitles."
-  },
-  "about":{
-    "heroTitleLine1": "About Our Company",
-    "heroSubtitle": "We help global businesses thrive through expert communication and cultural fluency.",
-    "cardTitle1": "Our Mission",
-    "cardContent1": "To empower organizations worldwide with top-tier language and localization services that foster growth and connection.",
-    "cardTitle2": "Our Values",
-    "cardContent2": "Integrity, cultural sensitivity, and precision guide everything we do to ensure your message resonates globally.",
-    "cardTitle3": "Our Team",
-    "cardContent3": "A diverse group of linguists, strategists, and technologists dedicated to delivering excellence in every translation.",
-    "cardTitle4": "Our Journey",
-    "cardContent4": "Founded in 2010, we've grown into a trusted partner for Fortune 500 companies across five continents.",
-    "aboutSectionLabel": "About Our Company"
-  }
-}
+  "services": {
+    "heroTitleLine1": "Our Expert Services",
+    "heroSubtitle": "Professional translations recognized by governmental authorities and financial institutions.",
+    "cardTitle1": "Income & Financial Records",
+    "cardContent1": "Accurate translation of 106 forms, bank statements, and payslips for overseas investment and proof of wealth.",
+    "cardTitle2": "Medical Documentation",
+    "cardContent2": "High-precision translation of medical reports, diagnoses, and healthcare records with strict confidentiality.",
+    "cardTitle3": "Contracts & Legal Instruments",
+    "cardContent3": "Professional translation for business agreements, corporate bylaws, and complex legal documents.",
+    "cardTitle4": "Official Certificates",
+    "cardContent4": "Marriage certificates, academic records (Bagrut), and IDs. Notarial certification available via third-party partners.",
+    "cardTitle5": "Linguistic Editing",
+    "cardContent5": "Rigorous quality control and terminology verification
