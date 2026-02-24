@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="he"> <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="./logo.png" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Professional corporate translation services for businesses"
-    />
+    <meta name="theme-color" content="#1a365d" />
+
+    <title>Lawrence Corporate Translations Ltd | לורנס תרגומים עסקיים בע״מ</title>
+    
+    <meta name="description" content="Professional Hebrew-English translation services for financial, medical, and legal documents. Specialized in 106 forms, bank statements, and investment compliance." />
+    
+    <script src="/nagishli_v2.3_rev050920191652/nagishli.js" defer></script>
+
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Lawrence Corporate Translations</title>
 
     <style>
+      /* Accessibility: Allows keyboard users to skip navigation */
       .skip-link {
         position: absolute;
         top: -40px;
         left: 0;
-        background: #000;
+        background: #1a365d;
         color: #fff;
         padding: 8px;
-        z-index: 100;
+        z-index: 1000;
+        text-decoration: none;
       }
-
       .skip-link:focus {
         top: 0;
       }
@@ -31,12 +33,12 @@
   </head>
 
   <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link">דלג לתוכן המרכזי / Skip to content</a>
 
     <noscript>
-      You need to enable JavaScript to run this app. If you're using a screen reader and nothing is announced, please enable JavaScript or contact support.
+      You need to enable JavaScript to run this app. לחוויית גלישה תקינה יש לאפשר JavaScript בדפדפן.
     </noscript>
 
-    <div id="root" role="main" aria-label="Application main content"></div>
+    <div id="root"></div>
   </body>
 </html>
