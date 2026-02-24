@@ -3,21 +3,20 @@ import { useTranslation } from 'react-i18next';
 
 const Accessibility = () => {
   const { t } = useTranslation();
-
   return (
-    <div className="container" style={{ padding: '40px', textAlign: 'start' }}>
+    <div className="container" style={{ padding: '60px 20px', maxWidth: '800px', margin: '0 auto', textAlign: 'start' }}>
       <h1>{t('accessibility.title')}</h1>
       <p>{t('accessibility.content')}</p>
-      <div style={{ marginTop: '20px' }}>
+      <div style={{ marginTop: '30px' }}>
         <h3>התאמות הנגישות באתר:</h3>
-        <ul>
-          <li>ניווט מקלדת מלא</li>
-          <li>תמיכה בטכנולוגיות מסייעות (קורא מסך)</li>
-          <li>התאמה לדפדפנים מודרניים</li>
-          <li>תיוג תמונות (Alt Text)</li>
+        <ul style={{ lineHeight: '1.8' }}>
+          <li>ניווט מלא באמצעות המקלדת.</li>
+          <li>תאימות לקוראי מסך.</li>
+          <li>הצהרת נגישות ברורה.</li>
+          <li>שימוש ברכיב נגישות חיצוני (Nagishli).</li>
         </ul>
       </div>
-      <p><strong>{t('accessibility.coordinator')}</strong></p>
+      <p style={{ marginTop: '20px' }}><strong>{t('accessibility.coordinator')}</strong></p>
     </div>
   );
 };
