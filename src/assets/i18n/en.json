@@ -30,12 +30,6 @@
     "cardTitle6": "Subtitling Solutions",
     "cardContent6": "Making business video content accessible through accurate transcription and subtitling."
   },
-  "accessibility": {
-    "link": "Accessibility Statement",
-    "title": "Accessibility Statement - Lawrence Translations",
-    "content": "We are committed to making this website accessible to the entire population in accordance with Israeli Standard TI 5568 at Level AA.",
-    "coordinator": "Accessibility Coordinator: Aaron Lawrence | 055-5587934"
-  }
   "contact": {
     "title": "Contact Us",
     "subtitle": "Get in touch for a professional quote or consultation.",
@@ -45,5 +39,11 @@
     "whatsappDetail": "Chat with us",
     "phoneDetail": "055-5587934",
     "emailDetail": "sales@lctltd.com"
+  },
+  "accessibility": {
+    "link": "Accessibility Statement",
+    "title": "Accessibility Statement - Lawrence Translations",
+    "content": "We are committed to making this website accessible to the entire population in accordance with Israeli Standard TI 5568 at Level AA.",
+    "coordinator": "Accessibility Coordinator: Aaron Lawrence | 055-5587934"
   }
 }
