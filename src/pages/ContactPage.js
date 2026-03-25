@@ -25,43 +25,35 @@ export default function ContactPage() {
               className="contact-options"
               aria-label={t("contact.contactMethodsSectionLabel") || "Contact Methods"}
             >
-              {/* WhatsApp Card */}
-              <a 
-                href="https://wa.me/972555587934" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="contact-card"
-                style={{ textDecoration: 'none', color: 'inherit' }}
-              >
-                <article>
-                  <h2>{t("contact.whatsapp")}</h2>
-                  <p>{t("contact.whatsappDetail")}</p>
-                </article>
-              </a>
+              {/* Box 1: WhatsApp */}
+              <article className="contact-card">
+                <h2>{t("contact.whatsapp")}</h2>
+                <p>
+                  <a href="https://wa.me/972555587934" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                    {t("contact.whatsappDetail")}
+                  </a>
+                </p>
+              </article>
 
-              {/* Phone Card */}
-              <a 
-                href="tel:0555587934" 
-                className="contact-card"
-                style={{ textDecoration: 'none', color: 'inherit' }}
-              >
-                <article>
-                  <h2>{t("contact.phone")}</h2>
-                  <p>{t("contact.phoneDetail")}</p>
-                </article>
-              </a>
+              {/* Box 2: Phone */}
+              <article className="contact-card">
+                <h2>{t("contact.phone")}</h2>
+                <p>
+                  <a href="tel:0555587934" style={{ color: 'inherit', textDecoration: 'none' }}>
+                    {t("contact.phoneDetail")}
+                  </a>
+                </p>
+              </article>
 
-              {/* Email Card */}
-              <a 
-                href="mailto:sales@lctltd.com" 
-                className="contact-card" 
-                style={{ textDecoration: 'none', color: 'inherit' }}
-              >
-                <article>
-                  <h2>{t("contact.email")}</h2>
-                  <p>{t("contact.emailDetail")}</p>
-                </article>
-              </a>
+              {/* Box 3: Email */}
+              <article className="contact-card">
+                <h2>{t("contact.email")}</h2>
+                <p>
+                  <a href="mailto:sales@lctltd.com" style={{ color: 'inherit', textDecoration: 'none' }}>
+                    {t("contact.emailDetail")}
+                  </a>
+                </p>
+              </article>
             </section>
           </div>
         </section>
