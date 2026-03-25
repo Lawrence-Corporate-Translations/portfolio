@@ -8,47 +8,60 @@ export default function ContactPage() {
 
   return (
     <div className="contact-page-container">
-      {/* Add role="main" and aria-label for screen readers */}
       <main className="contact-main" role="main" aria-labelledby="contact-hero-heading">
         <Header />
 
-        {/* Hero section with heading association */}
         <section className="contact-hero">
           <div className="contact-content">
-            {/* id used for aria-labelledby */}
             <h1 id="contact-hero-heading" className="contact-title">
-              {t("contact.heroTitleLine1")}
+              {t("contact.title")}
             </h1>
 
             <p className="contact-subtitle">
-              {t("contact.heroSubtitle")}
+              {t("contact.subtitle")}
             </p>
 
-            {/* Options section with landmark role and aria-label */}
             <section
               className="contact-options"
               aria-label={t("contact.contactMethodsSectionLabel") || "Contact Methods"}
             >
-              {/* Use article or section to improve semantics */}
-              <article className="contact-card">
-                <h2>{t("contact.cardTitle1")}</h2>
-                <p>{t("contact.cardContent1")}</p>
-              </article>
+              {/* WhatsApp Card */}
+              <a 
+                href="https://wa.me/972555587934" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="contact-card"
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
+                <article>
+                  <h2>{t("contact.whatsapp")}</h2>
+                  <p>{t("contact.whatsappDetail")}</p>
+                </article>
+              </a>
 
-              <article className="contact-card">
-                <h2>{t("contact.cardTitle2")}</h2>
-                <p>{t("contact.cardContent2")}</p>
-              </article>
+              {/* Phone Card */}
+              <a 
+                href="tel:0555587934" 
+                className="contact-card"
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
+                <article>
+                  <h2>{t("contact.phone")}</h2>
+                  <p>{t("contact.phoneDetail")}</p>
+                </article>
+              </a>
 
-              <article className="contact-card">
-                <h2>{t("contact.cardTitle3")}</h2>
-                <p>{t("contact.cardContent3")}</p>
-              </article>
-
-              <article className="contact-card">
-                <h2>{t("contact.cardTitle4")}</h2>
-                <p>{t("contact.cardContent4")}</p>
-              </article>
+              {/* Email Card */}
+              <a 
+                href="mailto:sales@lctltd.com" 
+                className="contact-card" 
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
+                <article>
+                  <h2>{t("contact.email")}</h2>
+                  <p>{t("contact.emailDetail")}</p>
+                </article>
+              </a>
             </section>
           </div>
         </section>
