@@ -10,40 +10,45 @@
   "home": {
     "heroTitleLine1": "Legal and Financial Precision",
     "heroTitleLine2": "Without Compromise",
-    "heroSubtitle": "Specializing in the translation of income documents (106, pay stubs), medical records, and legal contracts. Tailored solutions for real estate investors.",
+    "heroSubtitle": "Expert translation for high-stakes documentation, including financial records, medical reports, and legal contracts. Specialized solutions for international real estate investors.",
     "previous": "Previous",
     "next": "Next"
   },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Bridging the gap between languages with absolute accuracy.",
+    "content": "Lawrence Corporate Translations Ltd is a premier language service provider specializing in complex legal and financial documentation. Founded on the principles of meticulous detail and confidentiality, we provide certified translations recognized by major institutions, government authorities, and legal bodies worldwide. Whether navigating international real estate acquisitions or translating sensitive medical data, our mission is to ensure your message retains its power and legal standing in every language."
+  },
   "services": {
-    "heroTitleLine1": "Our Services",
-    "heroSubtitle": "Professional translation recognized by institutions and authorities in Israel and worldwide.",
-    "cardTitle1": "Income & Financial Documents",
-    "cardContent1": "Translation of 106 forms, bank statements, and pay stubs for capital verification and overseas investments.",
-    "cardTitle2": "Medical Documents",
-    "cardContent2": "Precise translation of medical reports, diagnoses, and discharge summaries.",
-    "cardTitle3": "Contracts & Legal",
-    "cardContent3": "Translation of engagement agreements, business contracts, and legal documents.",
-    "cardTitle4": "Official Certificates",
-    "cardContent4": "Translation of diplomas, marriage certificates, and IDs. Notary services available via third-party providers.",
-    "cardTitle5": "Linguistic Editing",
-    "cardContent5": "Meticulous review of translations to ensure maximum terminological accuracy.",
-    "cardTitle6": "Subtitling Solutions",
-    "cardContent6": "Making business video content accessible through accurate transcription and subtitling."
+    "heroTitleLine1": "Our Expertise",
+    "heroSubtitle": "Precision-driven language solutions tailored for corporate and private sectors.",
+    "cardTitle1": "Financial & Income Assets",
+    "cardContent1": "Certified translation of 106 forms, bank statements, and pay stubs for capital verification and international investments.",
+    "cardTitle2": "Medical & Clinical Reports",
+    "cardContent2": "Expert translation of medical diagnoses, clinical trials, and discharge summaries with total terminological accuracy.",
+    "cardTitle3": "Legal Contracts",
+    "cardContent3": "Professional translation of engagement agreements, business contracts, and binding legal instruments.",
+    "cardTitle4": "Official Certification",
+    "cardContent4": "Translation of diplomas, marriage licenses, and IDs. Notary coordination available through our strategic partners.",
+    "cardTitle5": "Linguistic Quality Assurance",
+    "cardContent5": "Rigorous proofreading and editing to ensure your documents meet the highest global standards of clarity.",
+    "cardTitle6": "Corporate Subtitling",
+    "cardContent6": "Localizing business video content through precise transcription and time-coded subtitling solutions."
   },
   "contact": {
     "title": "Contact Us",
-    "subtitle": "Get in touch for a professional quote or consultation.",
+    "subtitle": "Reach out today for a professional consultation or a direct quote.",
     "whatsapp": "WhatsApp",
     "phone": "Phone",
     "email": "Email",
-    "whatsappDetail": "Chat with us",
+    "whatsappDetail": "Chat with our team",
     "phoneDetail": "055-5587934",
     "emailDetail": "sales@lctltd.com"
   },
   "accessibility": {
     "link": "Accessibility Statement",
-    "title": "Accessibility Statement - Lawrence Translations",
-    "content": "We are committed to making this website accessible to the entire population in accordance with Israeli Standard TI 5568 at Level AA.",
+    "title": "Accessibility Statement",
+    "content": "We are committed to digital inclusivity, ensuring our website is accessible to all users in accordance with Israeli Standard TI 5568 (Level AA).",
     "coordinator": "Accessibility Coordinator: Aaron Lawrence | 055-5587934"
   }
 }
