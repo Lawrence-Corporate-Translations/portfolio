@@ -17,38 +17,17 @@ export default function AboutPage() {
 
         <section className="about-hero">
           <div className="about-content">
-            {/* Heading used as label for <main> */}
             <h1 id="about-hero-heading" className="about-title">
-              {t("about.heroTitleLine1")}
+              {t("about.title")}
             </h1>
 
             <p className="about-subtitle">
-              {t("about.heroSubtitle")}
+              {t("about.subtitle")}
             </p>
 
-            {/* Section with accessible label for screen readers */}
-            <section
-              className="about-cards"
-              aria-label={t("about.aboutSectionLabel") || "About Our Company"}
-            >
-              <article className="about-card">
-                <h2>{t("about.cardTitle1")}</h2>
-                <p>{t("about.cardContent1")}</p>
-              </article>
-
-              <article className="about-card">
-                <h2>{t("about.cardTitle2")}</h2>
-                <p>{t("about.cardContent2")}</p>
-              </article>
-
-              <article className="about-card">
-                <h2>{t("about.cardTitle3")}</h2>
-                <p>{t("about.cardContent3")}</p>
-              </article>
-
-              <article className="about-card">
-                <h2>{t("about.cardTitle4")}</h2>
-                <p>{t("about.cardContent4")}</p>
+            <section className="about-text-section">
+              <article className="about-description">
+                <p>{t("about.content")}</p>
               </article>
             </section>
           </div>
