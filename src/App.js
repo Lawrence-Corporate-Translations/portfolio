@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+
+// TRIPLE CHECK THESE NAMES: 
+// If your files are "home.js" (lowercase), change "Home" to "home" below.
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Accessibility from './pages/Accessibility';
+
+// Fix the CSS path again just to be 100% sure
 import './styles/App.css';
 
 function App() {
