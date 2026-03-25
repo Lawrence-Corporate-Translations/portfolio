@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ServicesPage from './pages/ServicesPage';
-import AccessibilityPage from './pages/AccessibilityPage'; // וודא שיצרת קובץ כזה
+import Accessibility from './pages/Accessibility'; // שיניתי ל-Accessibility כדי להתאים לשם הקובץ שלך
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/services" element={<ServicesPage />} />
-        <Route path="/accessibility" element={<AccessibilityPage />} />
+        <Route path="/accessibility" element={<Accessibility />} />
       </Routes>
     </Suspense>
   );
