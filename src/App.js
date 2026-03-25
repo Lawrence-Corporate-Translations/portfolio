@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Accessibility from './pages/Accessibility';
-import './App.css';
+import './styles/App.css';
 
 function App() {
   const { t, i18n } = useTranslation();
